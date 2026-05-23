@@ -65,7 +65,7 @@ export const App: React.FC = () => {
   }, [isUnlocked]);
 
   return (
-    <div className="relative min-h-screen text-white select-none overflow-hidden bg-black font-sans">
+    <div className="relative min-h-screen text-white select-none bg-black font-sans">
       {/* 1. Twinkling Stars Sky Background */}
       <StarsBackground />
 

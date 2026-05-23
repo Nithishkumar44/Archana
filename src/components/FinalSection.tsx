@@ -72,10 +72,10 @@ export const FinalSection: React.FC = () => {
               </motion.h2>
 
               {/* Dual Decision Buttons */}
-              <div className="flex flex-row gap-6 md:gap-8 justify-center w-full">
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center w-full px-4">
                 <button
                   onClick={handleResponse}
-                  className="px-8 py-4 rounded-full bg-gradient-to-r from-rose-gold-600 to-rose-gold-500 text-white font-sans text-xs md:text-sm tracking-widest uppercase border border-rose-gold-300/30 hover:border-rose-gold-200 transition-all duration-300 cursor-pointer shadow-[0_0_20px_rgba(183,110,121,0.2)] hover:shadow-[0_0_35px_rgba(183,110,121,0.5)] hover:scale-105 active:scale-95 flex items-center gap-2"
+                  className="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-rose-gold-600 to-rose-gold-500 text-white font-sans text-xs md:text-sm tracking-widest uppercase border border-rose-gold-300/30 hover:border-rose-gold-200 transition-all duration-300 cursor-pointer shadow-[0_0_20px_rgba(183,110,121,0.2)] hover:shadow-[0_0_35px_rgba(183,110,121,0.5)] hover:scale-105 active:scale-95 flex items-center justify-center gap-2"
                   style={{ animation: 'heartbeat 1.8s infinite ease-in-out' }}
                 >
                   <Heart className="w-4 h-4 text-white fill-white" />
@@ -84,7 +84,7 @@ export const FinalSection: React.FC = () => {
 
                 <button
                   onClick={handleResponse}
-                  className="px-8 py-4 rounded-full bg-black/80 text-rose-gold-300 font-sans text-xs md:text-sm tracking-widest uppercase border border-rose-gold-500/50 hover:border-rose-gold-400 transition-all duration-300 cursor-pointer shadow-[0_0_20px_rgba(0,0,0,0.4)] hover:shadow-[0_0_35px_rgba(183,110,121,0.3)] hover:scale-105 active:scale-95 flex items-center gap-2"
+                  className="w-full sm:w-auto px-8 py-4 rounded-full bg-black/80 text-rose-gold-300 font-sans text-xs md:text-sm tracking-widest uppercase border border-rose-gold-500/50 hover:border-rose-gold-400 transition-all duration-300 cursor-pointer shadow-[0_0_20px_rgba(0,0,0,0.4)] hover:shadow-[0_0_35px_rgba(183,110,121,0.3)] hover:scale-105 active:scale-95 flex items-center justify-center gap-2"
                   style={{ animation: 'heartbeat 1.8s infinite ease-in-out', animationDelay: '0.4s' }}
                 >
                   <Heart className="w-4 h-4 text-rose-gold-300 fill-rose-gold-300" />
