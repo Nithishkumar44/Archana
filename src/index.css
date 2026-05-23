@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --color-rose-gold-50: #fcf6f6;
+  --color-rose-gold-100: #faf0f0;
+  --color-rose-gold-200: #f2dadc;
+  --color-rose-gold-300: #e8c5c8;
+  --color-rose-gold-400: #d69ca3;
+  --color-rose-gold-500: #b76e79;
+  --color-rose-gold-600: #a3535f;
+  --color-rose-gold-700: #883f4a;
+  --color-rose-gold-800: #71353f;
+  --color-rose-gold-900: #5e2f37;
+  
+  --color-deep-crimson: #5e0b15;
+  --color-luxury-black: #080202;
+  
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Montserrat", sans-serif;
+  
+  --animate-heartbeat: heartbeat 1.5s ease-in-out infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  
+  @keyframes heartbeat {
+    0% { transform: scale(1); }
+    14% { transform: scale(1.12); }
+    28% { transform: scale(1); }
+    42% { transform: scale(1.12); }
+    70% { transform: scale(1); }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #080202;
+}
+::-webkit-scrollbar-thumb {
+  background: #b76e79;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a3535f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.text-glow-crimson {
+  text-shadow: 0 0 10px rgba(230, 57, 70, 0.4), 0 0 20px rgba(230, 57, 70, 0.2);
+}
+
+.text-glow-gold {
+  text-shadow: 0 0 10px rgba(183, 110, 121, 0.4), 0 0 20px rgba(183, 110, 121, 0.2);
+}
+
+.glassmorphism {
+  background: rgba(10, 5, 5, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(183, 110, 121, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glassmorphism-light {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
