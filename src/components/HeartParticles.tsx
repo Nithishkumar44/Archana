@@ -24,7 +24,7 @@ export const HeartParticles: React.FC = () => {
     if (!ctx) return;
 
     let animationId: number;
-    let particles: Particle[] = [];
+    const particles: Particle[] = [];
     const colors = [
       'rgba(230, 57, 70, 0.7)',  // deep pink/red
       'rgba(183, 110, 121, 0.6)', // rose gold

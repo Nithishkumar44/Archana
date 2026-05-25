@@ -24,7 +24,8 @@ export const Countdown: React.FC = () => {
   });
 
   useEffect(() => {
-    const startDate = new Date(START_DATE_STRING);
+    const [year, month, day] = START_DATE_STRING.split('-').map(Number);
+    const startDate = new Date(year, month - 1, day);
 
     const calculateTime = () => {
       const now = new Date();
@@ -110,7 +111,10 @@ export const Countdown: React.FC = () => {
           viewport={{ once: true }}
           className="font-sans text-[10px] tracking-wider text-stone-500 uppercase mt-8"
         >
-          Started counting on {new Date(START_DATE_STRING).toLocaleDateString('en-US', {
+          Started counting on {(() => {
+            const [year, month, day] = START_DATE_STRING.split('-').map(Number);
+            return new Date(year, month - 1, day);
+          })().toLocaleDateString('en-US', {
             year: 'numeric',
             month: 'long',
             day: 'numeric',
